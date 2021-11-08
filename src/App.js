@@ -15,6 +15,7 @@ const reducer = (state, action) => {
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  console.log('state: ', state);
   return (
     <div className="App">
       <h1>Todo Application</h1>
