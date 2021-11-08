@@ -4,7 +4,7 @@
 
 -   [CodeSandbox](https://codesandbox.io/s/condescending-mendel-eco1h?file=/src/App.js)
 
--   **[https://github.com/beatlesm/redux-qa-321](https://github.com/beatlesm/redux-qa-321)**
+-   **[https://github.com/beatlesm/reducer-qa-321](https://github.com/beatlesm/reducer-qa-321)**
 
 
 This project allows you to practice the concepts and techniques learned in this module and apply them in a concrete project. This module explored asyncronous action creators in Redux. In your project you will demonstrate proficiency of these subjects and principles by building an app from scratch that consumes and API of your choosing, and displays data fetched from that API.
