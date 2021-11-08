@@ -27,9 +27,7 @@ function App() {
               </li>
           })
         }
-        {/* <li>Todo 1 <span>- Done</span></li>
-        <li>Todo 2 <span>- Done</span></li>
-        <li>Todo 3 <span>- Done</span></li> */}
+       
       </ul>
       <div>
         <input />
