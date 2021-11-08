@@ -16,13 +16,16 @@ const reducer = (state, action) => {
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   console.log('state: ', state);
+  const handleItemClick = (e) => {
+    console.log(e.target.dataset);
+  }
   return (
     <div className="App">
       <h1>Todo Application</h1>
       <ul>
         {
           state.todos.map(item => {
-            return <li key = {item.id}>
+            return <li onClick={handleItemClick} data-itemid={item.id} key = {item.id}>
               {item.title} {item.done && <span>- Done</span>}
               </li>
           })
