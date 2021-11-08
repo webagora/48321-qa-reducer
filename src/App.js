@@ -1,4 +1,4 @@
-
+import { useReducer } from 'react';
 import './App.css';
 
 const initialState = {
@@ -9,11 +9,12 @@ const initialState = {
       ]
 };
 
-const reduce = (state, action) => {
+const reducer = (state, action) => {
   return state;
 }
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
       <h1>Todo Application</h1>
