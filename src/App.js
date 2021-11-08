@@ -9,6 +9,10 @@ const initialState = {
       ]
 };
 
+const reduce = (state, action) => {
+  return state;
+}
+
 function App() {
   return (
     <div className="App">
