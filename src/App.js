@@ -20,9 +20,14 @@ function App() {
     <div className="App">
       <h1>Todo Application</h1>
       <ul>
-        <li>Todo 1 <span>- Done</span></li>
+        {
+          state.todos.map(item => {
+            return <li>{item.title}</li>
+          })
+        }
+        {/* <li>Todo 1 <span>- Done</span></li>
         <li>Todo 2 <span>- Done</span></li>
-        <li>Todo 3 <span>- Done</span></li>
+        <li>Todo 3 <span>- Done</span></li> */}
       </ul>
       <div>
         <input />
