@@ -3,7 +3,7 @@ import './App.css';
 
 const initialState = {
   todos: [
-      {title: "todo 1", done: false, id: "1111"},
+      {title: "todo 1", done: true, id: "1111"},
       {title: "todo 2", done: false, id: "2222"},
       {title: "todo 3", done: false, id: "3333"}
       ]
