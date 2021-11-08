@@ -22,7 +22,9 @@ function App() {
       <ul>
         {
           state.todos.map(item => {
-            return <li>{item.title} {item.done && <span>- Done</span>}</li>
+            return <li key = {item.id}>
+              {item.title} {item.done && <span>- Done</span>}
+              </li>
           })
         }
         {/* <li>Todo 1 <span>- Done</span></li>
