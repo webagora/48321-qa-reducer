@@ -17,7 +17,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   console.log('state: ', state);
   const handleItemClick = (e) => {
-    console.log(e.target.dataset);
+    console.log(e.target.dataset.itemid);
   }
   return (
     <div className="App">
