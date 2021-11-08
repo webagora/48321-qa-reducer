@@ -10,7 +10,23 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
-  return state;
+  switch (action.type){
+    case "TOGGLE_TODO":
+      return {
+        ...state,
+        todos: state.todos.map((item) => {
+          if (item.id === action.payload) {
+            return {
+              ...item,
+              done: !item.done
+            };
+          }
+          return item;
+        })
+      };
+    default:
+      return state;
+  }  
 }
 
 function App() {
@@ -18,6 +34,7 @@ function App() {
   console.log('state: ', state);
   const handleItemClick = (e) => {
     console.log(e.target.dataset.itemid);
+    dispatch({type: "TOGGLE_TODO", payload:e.target.dataset.itemid })
   }
   return (
     <div className="App">
